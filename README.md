@@ -25,3 +25,5 @@ Adds a button to the user interface. Goes one step further and combines all the 
 
 ###7. Create A DataGrid
 Uses the button to run a query of tblSystem, then displays a DataGrid with all the returned data.
+
+Functionality in Conquest used in examples is documented here: [API](API.txt)

@@ -1,0 +1,79 @@
+Conquest
+{
+	class ErrorMessageException : Exception
+
+	Conquest.Silverlight
+	{
+
+		Controls 
+		{
+			class CQChildWindow
+			{
+				string Title
+				bool HasCloseButton
+				void Show()
+				void Hide()
+				void Close()
+				object Content
+				double Wigth
+				double Height
+			}
+
+			class CQDataGrid
+			{
+				object ItemsSource
+				event System.EventHandler<GridRowClickEventArgs> GridRowDoubleClick
+				event System.EventHandler<GridRowClickEventArgs> GridRowSingleClick
+				bool IsReadOnly
+				double Wigth
+				double Height
+			}
+
+			class GridRowClickEventArgs
+        	{
+            	object Data
+            }
+
+		}
+
+		MessagePop
+		{
+
+			class MessageEventArgs
+			{
+				DialogResult DialogResult
+			}
+
+			void Show(string message)
+			void Show(string message, string title)
+			void Show(string message, string title, MessageButtons button, System.EventHandler<MessageEventArgs> closedEvent)
+
+		}
+
+		enum DialogResult
+		{
+			Cancel
+			False
+		}
+
+		enum MessageButtons
+		{
+			OK
+			OKCancel
+			YesNo
+			YesNoCancel
+		}
+
+		App
+		{
+			void RunQuery(string sql, System.Action<System.Collections.IList> callBack)
+			void RunQuery(string sql, string connectionString, System.Action<System.Collections.IList> callBack)
+			void ExecuteNoQuery(string sql, System.Action<int> callBack)
+			void RunScriptOnServer(System.Action<string> callBack, string script)
+			void RunScriptOnServer(System.Action<string> callBack, System.Action<string> errorCallBack, string script, string paraKey, string paraValue)
+			void SendEmail(string to, string subject, string emailBody)
+		}
+
+	}
+
+}
