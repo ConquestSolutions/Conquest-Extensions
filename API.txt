@@ -1,6 +1,6 @@
 Conquest
 {
-	class ErrorMessageException : Exception
+	class ErrorMessageException : System.Exception
 
 	Conquest.Silverlight
 	{
@@ -15,8 +15,8 @@ Conquest
 				void Hide()
 				void Close()
 				object Content
-				double Wigth
-				double Height
+				int Width
+				int Height
 			}
 
 			class CQDataGrid
@@ -25,14 +25,14 @@ Conquest
 				event System.EventHandler<GridRowClickEventArgs> GridRowDoubleClick
 				event System.EventHandler<GridRowClickEventArgs> GridRowSingleClick
 				bool IsReadOnly
-				double Wigth
-				double Height
+				int Width
+				int Height
 			}
 
 			class GridRowClickEventArgs
-        	{
-            	object Data
-            }
+	        	{
+            			object Data
+            		}
 
 		}
 
