@@ -9,8 +9,14 @@
 ### NOTE: THIS SCRIPT NEEDS TO BE COPIED TO THE REQUEST SCRIPT WITH THE KEY 'ActionSavingValidation' FOR IT TO WORK
 
 #import the relevant namespaces
-from System import String
-from System.Windows import MessageBox
+from System import *
+from System.Windows import *
+from Conquest import *
+from Conquest.DataAccess import *
+
+entity = Connection.Entities
+if IsTestMode:
+	source = entity.LoadAsset(14592)
 
 #create MessageBox
 def p(o):
@@ -24,3 +30,8 @@ if String.IsNullOrWhiteSpace(source.Location):
 #Alternatively, instead of providing an error message, we could populate it ourselves to a generic location.
 if String.IsNullOrWhiteSpace(source.Location):
 	source.Location == 'Melbourne'
+
+#Check first two characters of field
+if source.UserText1[:2] != 'MS':
+	isWaitCallBack = True
+	p('Not correct format')
