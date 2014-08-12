@@ -1,4 +1,4 @@
-ConquestExtensions-Examples
+Conquest Extensions Training
 ===========================
 
 http://www.conquest-solutions.com.au/members/
