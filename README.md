@@ -1,7 +1,7 @@
 Conquest Extensions Training
 ===========================
 
-http://www.conquest-solutions.com.au/members/
+https://www.conquest-solutions.com.au/members/extensions/
 
 View examples of Conquest Extensions to help develop your own ideas. Take a look at the code in the Conquest Extensions Intro folder to get started.
 
