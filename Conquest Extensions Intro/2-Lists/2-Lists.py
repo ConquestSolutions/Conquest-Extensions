@@ -1,7 +1,7 @@
 ##########
 #
 # STEP 2: THIS SCRIPT SHOWS HOW TO CREATE LISTS
-# Copy this code into a console bit by bit from the top down to see how it all works.
+# Copy this code into a script to see how to create a flat list.
 #
 ##########
 
