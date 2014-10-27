@@ -26,4 +26,7 @@ Adds a button to the user interface. Goes one step further and combines all the 
 ###7. Create A DataGrid
 Uses the button to run a query of tblSystem, then displays a DataGrid with all the returned data.
 
+###8. Hide or Disable Menu Items
+Hides or disables menu items based upon whether the user is an admin or not. You can use user roles to define more complex conditions.
+
 Functionality in Conquest used in examples is documented here: [API](API.txt)
