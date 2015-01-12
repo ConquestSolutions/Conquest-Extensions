@@ -1,79 +1,79 @@
-Conquest
+namespace Conquest
 {
-	class ErrorMessageException : System.Exception
+    class ErrorMessageException : System.Exception
 
-	Conquest.Silverlight
-	{
+    namespace Silverlight
+    {
 
-		Controls 
-		{
-			class CQChildWindow
-			{
-				string Title
-				bool HasCloseButton
-				void Show()
-				void Hide()
-				void Close()
-				object Content
-				int Width
-				int Height
-			}
+        namespace Controls 
+        {
+            class CQChildWindow
+            {
+                string Title
+                bool HasCloseButton
+                void Show()
+                void Hide()
+                void Close()
+                object Content
+                int Width
+                int Height
+            }
 
-			class CQDataGrid
-			{
-				object ItemsSource
-				event System.EventHandler<GridRowClickEventArgs> GridRowDoubleClick
-				event System.EventHandler<GridRowClickEventArgs> GridRowSingleClick
-				bool IsReadOnly
-				int Width
-				int Height
-			}
+            class CQDataGrid
+            {
+                object ItemsSource
+                event System.EventHandler<GridRowClickEventArgs> GridRowDoubleClick
+                event System.EventHandler<GridRowClickEventArgs> GridRowSingleClick
+                bool IsReadOnly
+                int Width
+                int Height
+            }
 
-			class GridRowClickEventArgs
-	        	{
-            			object Data
-            		}
+            class GridRowClickEventArgs
+            {
+                object Data
+            }
 
-		}
+        }
 
-		MessagePop
-		{
+        class MessagePop
+        {
 
-			class MessageEventArgs
-			{
-				DialogResult DialogResult
-			}
+            class MessageEventArgs
+            {
+                DialogResult DialogResult
+            }
 
-			void Show(string message)
-			void Show(string message, string title)
-			void Show(string message, string title, MessageButtons button, System.EventHandler<MessageEventArgs> closedEvent)
+            void Show(string message)
+            void Show(string message, string title)
+            void Show(string message, string title, MessageButtons button, System.EventHandler<MessageEventArgs> closedEvent)
 
-		}
+        }
 
-		enum DialogResult
-		{
-			Cancel
-			False
-		}
+        enum DialogResult
+        {
+            Cancel
+            False
+        }
 
-		enum MessageButtons
-		{
-			OK
-			OKCancel
-			YesNo
-			YesNoCancel
-		}
+        enum MessageButtons
+        {
+            OK
+            OKCancel
+            YesNo
+            YesNoCancel
+        }
 
-		App
-		{
-			void RunQuery(string sql, System.Action<System.Collections.IList> callBack)
-			void RunQuery(string sql, string connectionString, System.Action<System.Collections.IList> callBack)
-			void ExecuteNoQuery(string sql, System.Action<int> callBack)
-			void RunScriptOnServer(System.Action<string> callBack, string script)
-			void RunScriptOnServer(System.Action<string> callBack, System.Action<string> errorCallBack, string script, string paraKey, string paraValue)
-			void SendEmail(string to, string subject, string emailBody)
-		}
+        class App
+        {
+            void RunQuery(string sql, System.Action<System.Collections.IList> callBack)
+            void RunQuery(string sql, string connectionString, System.Action<System.Collections.IList> callBack)
+            void ExecuteNoQuery(string sql, System.Action<int> callBack)
+            void RunScriptOnServer(System.Action<string> callBack, string script)
+            void RunScriptOnServer(System.Action<string> callBack, System.Action<string> errorCallBack, string script, string paraKey, string paraValue)
+            void SendEmail(string to, string subject, string emailBody)
+        }
 
-	}
+    }
 
 }
