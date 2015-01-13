@@ -1,0 +1,18 @@
+namespace Conquest
+{
+    class ErrorMessageException : System.Exception
+
+    namespace DataAccess
+    {
+
+        class Connection
+        {
+            int ExecuteNonQuery(string sql)
+            int ExecuteNonQuery(string sql, string connectionString)
+            IEnumerable<System.Data.DataRow> GetRows(string sql)
+            IEnumerable<System.Data.DataRow> GetRows(string sql, string connectionString)
+        }
+
+    }
+
+}

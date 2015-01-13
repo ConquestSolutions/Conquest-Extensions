@@ -1,15 +1,17 @@
 def done(): callBack(None)
 def fail(s): callBack(s)
+def debug(*obs):
+	from System.Windows.MessageBox import Show
+	Show("\n".join([ str(ob) for ob in obs]))
+
 def stripMargin(s):
 	import re
 	return re.sub("\s*\| ", "\n", s).strip()
+
 def runQuery(sql, f):
 	from Conquest.Silverlight import App
 	formattedSql = stripMargin(sql).replace("\n", " ")
 	App.RunQuery(formattedSql, f)
-def debug(*obs):
-	from System.Windows.MessageBox import Show
-	Show("\n".join([ str(ob) for ob in obs]))
 
 ## How to run a query before saving.
 
