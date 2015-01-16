@@ -24,6 +24,11 @@ def databaseCheckBeforeSave():
 	def onResult(collection):
 		if collection == None or len(collection) != 1:
 			return fail("You cannot change the Standard Action once assigned.")
+		## When using Conquest.Silverlight.App.RunQuery, an item in the collection
+		## received has properties that correspond to the column names used in the
+		## select query.
+		for item in collection:
+			debug(item.ActionID)
 		done()
 	checkSql = """
 	| select ActionID from tblAction where (StdActionID is null or StdActionID <= 0 or StdActionID > 0 and StdActionID = {sid})
