@@ -15,4 +15,4 @@ Extensions are organised into [Client-Side](Client/) and [Server-Side](Server/) 
 The functionality exposed for code that runs inside the Conquest Client (client-side code) and the Conquest Service (server-side code) are outlined in the following documents: 
 
 - [API.client.txt](API.client.txt)
-- [API.server.txt](API.client.txt)
+- [API.server.txt](API.server.txt)
