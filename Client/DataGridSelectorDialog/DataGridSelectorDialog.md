@@ -8,8 +8,8 @@ Example: [DataGridSelectorDialog.py](DataGridSelectorDialog.py)
 
 The example will display the following dialog:
 
-![](DataGridSelectorDialog.png)
+![](DataGridSelectorDialog.PNG)
 
 After some items are selected in the dialog, the following message will be displayed:
 
-![](DataGridSelectorDialog_DisplaySelected.png)
+![](DataGridSelectorDialog_DisplaySelected.PNG)
