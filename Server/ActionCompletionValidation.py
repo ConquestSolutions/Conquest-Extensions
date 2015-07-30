@@ -1,26 +1,35 @@
-## Running a query on the server.
+import Conquest
+import Conquest.DataAccess.Connection as conn
+from System import *
 
-def runNonQuery(sql):
-	from Conquest.DataAccess.Connection import ExecuteNonQuery
-	return ExecuteNonQuery(sql)
+def require(ok, requirement):
+	if not ok:
+		raise Conquest.ErrorMessageException(requirement)
 
-def getTable(sql):
-	from Conquest.DataAccess.Connection import GetRows
-	return GetRows(sql)
+def found(sql):
+	return len(list(conn.GetRows(sql))) == 1
 
-sql = "select top 10 ActionID, ActionDescription from tblAction order by ActionID desc"
-result = dict([(int(record["ActionID"]), str(record["ActionDescription"])) for record in getTable(sql)])
-# >> result
-# {
-# 	100: "Bottle 100",
-# 	99:  "Bottle 99",
-# 	...
-# }
+## The action completion validation is run on the server after Conquest business rules have been evaluated.
+## If an exception raised on the server, the completion process will be cancelled.
 
-rowsAffected = runNonQuery("update tblSystem set Value = '1' where Property = 'SampleProperty'")
-# >> rowsAffected
-# 0
+action = source
 
-## Tell the client that the process has failed with a message.
-from Conquest import ErrorMessageException
-raise ErrorMessageException("You cannot complete this action for reason X")
+# You can inspect the action to be completed and verify that particular details are filled in.
+
+def hasExpectedDisposalValue():
+	if (not action or
+		action.ActionType != "Disposal" or 
+		not action.UserNumber30 >= 0 or
+		not action.AssetID > 0):
+		return True
+
+	validMeasurement = "select top 1 1 from tblAsset where AssetID = {aid} and Measurement = {m}".format(
+		aid = action.AssetID,
+		m = action.UserNumber30)
+
+	return found(validMeasurement)
+
+require(hasExpectedDisposalValue(), "The measurement entered should be {m} for the action '{ref} - {desc}'".format(
+	m = action.UserNumber30,
+	ref = action.ReferenceID,
+	desc = action.ActionDescription))
