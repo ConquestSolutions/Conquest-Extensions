@@ -4,11 +4,10 @@
 # Copy this code into RequestLoadInterfaceContent.
 #
 #NOTE: To test this, you'll need to save the script and then open up an request. There you'll see a button.
-#      Add some address values and watch it assign a location field.
+#      Add some address values (like address, suburb, postcode etc) and watch it assign a location field.
 #
 ##########
 
-#import name spaces which contain the UI buttons and peripherals
 from System import String
 from System.Windows import *
 from System.Windows.Controls import *
@@ -33,10 +32,10 @@ def btnGenerateLocationClick(sender, e):
 	if not String.IsNullOrWhiteSpace(Location):
 		source.Location = Location
 	else:
-		displayMessage("There's no data to pop the location field with.")
+		displayMessage("There's no data to populate the location field with.")
 
+#create a button. 'Button()' is a standard control we can use. we then give it a string to display, and then assign the event function we created earlier
 def loadButton():
-	#create a button. 'Button()' is a standard control we can use. we then give it a string to display, and then assign the event function we created earlier
 	locationButton = Button()
 	locationButton.Content = "Generate Location"
 	locationButton.Click += btnGenerateLocationClick

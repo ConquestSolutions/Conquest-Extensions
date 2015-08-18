@@ -19,6 +19,7 @@ googleMapsButton.NavigateUri = Uri("http://maps.google.com/maps?z=12&t=m&q=" + s
 googleMapsButton.TargetName = "_blank"
 googleMapsButton.Content = "View in GIS"
 
+#add the button to the panel
 panel = StackPanel()
 panel.Children.Add(googleMapsButton)
 panel.Margin = Thickness(2,2,2,2)

@@ -9,23 +9,24 @@
 variable = 37
 
 #Return variable
-print 'Variable: ' + variable
+print 'Variable: ' + str(variable)
 
 #Multiply variable and return it
-multipiedvariable = 9 * variable
-print 'Multiplied variable: ' + multipiedvariable
+multipliedVariable = 9 * variable
+print 'Multiplied variable: ' + str(multipliedVariable)
 
 #Adding to a variable string is also easy
-conquest = 'conquest'
-conquest += ' '
-conquest += 'solutions'
-print 'Conquest: ' + conquest
+companyName = 'companyName'
+companyName += ' '
+companyName += 'companyName'
+print 'Company Name: ' + companyName
 
 #Create a reusable function - this function takes two arguments - team name and team nickname. It then joins them together in a string and prints the result.
-def aflTeam(name, nickname):
-     print 'AFL Team: ' + name + ' ' + nickname
+def printName(firstName, lastName):
+     print 'Full Name: ' + firstName + ' ' + lastName
 
-aflTeam('Adelaide','Crows') #returns 'Adelaide Crows'
+printName('Person', 'A') #returns 'FirstName LastName'
+printName('Person', 'B')
 
 #IF STATEMENT
 #This statement will return TRUE as 'a' is bigger than 'b'
@@ -33,6 +34,6 @@ a = 100
 b = 2
 
 if (a>b):
-	print 'TRUE' #This will return true
+	print 'a is bigger than b' #This will return true
 else:
-	print 'FALSE'
+	print 'a is not bigger than b'

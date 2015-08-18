@@ -5,17 +5,14 @@
 # This script fires when someone goes to 'save' an action. We want to check to make sure they have entered a location.
 # Check first two characters of field
 #
+### NOTE: THIS SCRIPT NEEDS TO BE COPIED TO THE REQUEST SCRIPT WITH THE KEY 'ActionSavingValidation' FOR IT TO WORK
+#
 ##########
 
-### NOTE: THIS SCRIPT NEEDS TO BE COPIED TO THE REQUEST SCRIPT WITH THE KEY 'ActionSavingValidation' FOR IT TO WORK
-
-#import the relevant namespaces
 from System import *
 from System.Windows import *
-from Conquest import *
-from Conquest.DataAccess import *
 
-#create MessageBox
+#create reusable MessageBox
 def displayMessage(message):
 	MessageBox.Show(str(message))
 
