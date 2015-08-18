@@ -6,7 +6,7 @@ For more info see our [Help Documentation](https://www.conquest-solutions.com.au
 
 ## Training material
 
-To get started with training material go [here](Training/)
+To get started with training material go [here](GetStartedBasics/)
 
 ## Reference material
 

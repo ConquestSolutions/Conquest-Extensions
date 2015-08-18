@@ -1,4 +1,4 @@
-Conquest Extensions Training
+Get Started with Conquest Extensions
 ===========================
 
 View examples of Conquest Extensions to help develop your own ideas. Take a look at the code in the Conquest Extensions Intro folder to get started.
@@ -6,16 +6,16 @@ View examples of Conquest Extensions to help develop your own ideas. Take a look
 ###1. Basic Code Samples
 IronPython basics to get you started with how the language works in the context of Conquest Extensions.
 
-###2. Lists
-How to create and handle basic lists.
+###2. Data Objects
+How to create and handle basic lists and key/value dictionaries.
 
-###3. Error Handling
-How to handle errors in Conquest Extensions - both intentional and unintentional.
+###3. Message Boxes and Error Handling
+Creating a message box to notify the user as well as how to handle errors in Conquest Extensions.
 
-###4. Validate Field
-Validate a field to make sure it exists. Useful if you wish to make sure something is entered before someone submits a request or similar.
+###4. Validating Data on the Client
+Validate data on the client before it is saved to the server. Useful if you wish to make sure something is entered before someone submits a request or similar.
 
-###5. MessageBox Yes/No Dialogue
+###5. Popup with Yes/No option
 Generates a yes/no dialogue. Useful if you wish to confirm a user would like to do something before they do it.
 
 ###6. Create A User Interface Button
