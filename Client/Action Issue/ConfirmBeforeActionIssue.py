@@ -1,3 +1,5 @@
+## ScriptKey: ActionLoadInterfaceContent, tested on 3.0329
+
 ###
 
 DEBUG = True # if true show debug messages. Turn this off when satisfied.
