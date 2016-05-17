@@ -4,11 +4,11 @@ This repository is a collection of code, training material and some documentatio
 
 For more info see our [Help Documentation](https://www.conquest-solutions.com.au/help/Documents/conquestextensions1.htm).
 
-## Training material
+## Training Material
 
 To get started with training material go [here](GetStarted/)
 
-## Reference material
+## Reference Material
 
 Extensions are organised into [Client-Side](Client/) and [Server-Side](Server/)  code.
 
