@@ -1,14 +1,14 @@
 def liftCB(transform):
 	"""
-	Takes a callback that recieves a value of type A
-		A => ()
+	Takes a callback that receives a value of type B
+		B => ()
 	Wraps a function that transforms A to B
 		A => B
-	And returns a callback that recieves a type B
-		B -> ()
+	And returns a callback that receives a type A
+		A => ()
 
 	Usage:
-		recievesA = liftCB(transform)(recievesB)
+		receivesA = liftCB(transform)(receiveB)
 	"""
 	def wrap(receive):
 		def apply(*value):
