@@ -27,7 +27,7 @@ if not String.IsNullOrWhiteSpace(Location):
 	import json
 	
 	#create API url to query
-	googleMapsToken = "AIzaSyA-Jb5XWYjh5BqTUS6Feb-WtCDbhuoORJw"
+	googleMapsToken = "YOUR_GOOGLE_MAPS_TOKEN"
 	addressString = urllib.quote_plus(Location)
 	url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + addressString + "&key=" + googleMapsToken
 	print url
