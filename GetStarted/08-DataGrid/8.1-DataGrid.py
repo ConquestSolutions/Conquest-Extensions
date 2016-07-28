@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 7: OPEN AND POPULATE A DATA GRID
+# OPEN AND POPULATE A DATA GRID
 # Copy this code into any interface scripts such as the 'RequestLoadInterface' script.
 #All this code does is open up a datagrid and populate it with data from tblSystem.
 #

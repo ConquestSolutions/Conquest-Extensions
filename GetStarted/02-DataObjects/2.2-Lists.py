@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 2: THIS SCRIPT SHOWS HOW TO CREATE LISTS
+# THIS SCRIPT SHOWS HOW TO CREATE LISTS
 # Copy this code into a script to see how to create a flat list.
 #
 ##########

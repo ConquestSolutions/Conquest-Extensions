@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 6.3: CHECKS IF AN ACTION IS A PARTICULAR STANDARD ACTION
+# CHECKS IF AN ACTION IS A PARTICULAR STANDARD ACTION
 # use this if you'd like to perform code on an action with a particular StdAction type
 # Copy this code into the client side script with scriptkey:
 # ActionLoadInterfaceContent

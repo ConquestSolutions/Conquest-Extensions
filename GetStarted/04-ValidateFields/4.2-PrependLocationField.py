@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 4: THIS SCRIPT VALIDATES THE LOCATION FIELD IN THE ACTION FORM BEFORE IT FIRES
+# THIS SCRIPT VALIDATES THE LOCATION FIELD IN THE ACTION FORM BEFORE IT FIRES
 # Copy this code into ActionSavingValidation - it uses the location field from that particular interface.
 # This script fires when someone goes to 'save' an action. We want to check to make sure they have entered a location.
 # Check first two characters of field

@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 8.2: THIS SCRIPT HIDES A MENU ITEM ON AN ACTION BASED UPON WHETHER THE USER IS AN ADMIN  
+# THIS SCRIPT DISABLES A MENU ITEM ON AN ACTION BASED UPON WHETHER THE USER IS AN ADMIN
 # Use User Roles for more comprehensive control
 # Copy this code into the client side script with scriptkey:
 # script key: ActionLoadInterfaceContent
@@ -21,11 +21,11 @@ if IsTestMode:
 
 #If you are an admin, you won't see the following options. (If you are not admin, change to False)
 if userAdmin == True:
-	model.HideMenu("Action>Copy Action")
-	model.HideMenu("Action>Move Action")
-	model.HideMenu("Action>Delete")
-	model.HideMenu("Action>Assign Standard Action")
-	model.HideMenu("Action>Request Approval")
-	model.HideMenu("Action>Relate Requests")
-	model.HideMenu("Action>Relate Defects")
-	model.HideMenu("Action>Complete")
+	model.DisableMenu("Action>Copy Action")
+	model.DisableMenu("Action>Move Action")
+	model.DisableMenu("Action>Delete")
+	model.DisableMenu("Action>Assign Standard Action")
+	model.DisableMenu("Action>Request Approval")
+	model.DisableMenu("Action>Relate Requests")
+	model.DisableMenu("Action>Relate Defects")
+	model.DisableMenu("Action>Complete")

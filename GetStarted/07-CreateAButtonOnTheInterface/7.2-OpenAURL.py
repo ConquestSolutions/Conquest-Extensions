@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 6.2: THIS SCRIPT CREATES A HYPERLINK WHICH OPENS IN ANOTHER BROWSER WINDOW
+# THIS SCRIPT CREATES A HYPERLINK WHICH OPENS IN ANOTHER BROWSER WINDOW
 # Copy this code into ActionLoadInterfaceContent.
 #
 #NOTE: To test this, you'll need to save the script and then open up an request. There you'll see a button.

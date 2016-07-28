@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 2: THIS SCRIPT SHOWS HOW TO CREATE DICTIONARIES
+# THIS SCRIPT SHOWS HOW TO CREATE DICTIONARIES
 # Copy this code into a script to see how to create a key value pair dictionary.
 ##########
 

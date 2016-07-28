@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 3.2: ERROR HANDLING - Raise Exception, log exception in log file
+# ERROR HANDLING - Raise Exception, log exception in log file
 # Copy this code into an extensions script bit by bit from the top down to see how it all works. Use the test button to see what comes up in
 #
 ##########

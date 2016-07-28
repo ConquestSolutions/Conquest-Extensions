@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 1: THIS SCRIPT IS A LITTLE BASIC PYTHON IN THE CONTEXT OF THE CONQUEST EXTENSIONS CONSOLE
+# THIS SCRIPT IS A LITTLE BASIC PYTHON IN THE CONTEXT OF THE CONQUEST EXTENSIONS CONSOLE
 # Copy this code into a console bit by bit from the top down to see how it all works.
 #
 ##########

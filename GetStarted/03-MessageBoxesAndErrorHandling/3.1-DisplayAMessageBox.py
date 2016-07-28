@@ -1,6 +1,6 @@
 ##########
 #
-# STEP 3.1: MESSAGE BOX - Basic message pop.
+# MESSAGE BOX - Basic message pop.
 # Copy this code into an extensions script bit by bit from the top down to see how it all works. Use the test button to see what comes up in
 #
 ##########
