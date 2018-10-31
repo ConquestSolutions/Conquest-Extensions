@@ -7,6 +7,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.vscode
 env/
 bin/
 build/
@@ -53,3 +54,4 @@ coverage.xml
 docs/_build/
 
 *.html
+.vscode/settings.json
