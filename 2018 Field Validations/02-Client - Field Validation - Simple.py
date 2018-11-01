@@ -1,0 +1,4 @@
+
+#Ways of validation
+
+#Python
